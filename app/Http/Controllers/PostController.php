@@ -88,13 +88,6 @@ class PostController extends Controller
     {
         //
         $data = $request->validated();
-        /*if(isset($data['posted'])){
-        if($data['posted'] == 'on')
-            $data['posted'] = 'yes';
-        else
-            $data['posted'] = 'no';
-        }else
-            $data['posted'] = 'no';*/
 
         if(isset($data['posted']))
            $data['posted'] = 'yes';
